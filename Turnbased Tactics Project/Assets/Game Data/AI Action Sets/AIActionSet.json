@@ -1,0 +1,155 @@
+{
+  "DevelopmentName": "GeneralAI",
+  "Actions": [
+    {
+      "ActionType": "GenericAttack",
+      "WeightModifier": 8.0,
+      "MovementHelper": {
+        "movementConsiderations": [
+          {
+            "inputAxis": {
+              "IAType": "ApproachTarget"
+            },
+            "curve": {
+              "curveType": "Linear",
+              "m": 1,
+              "k": 0,
+              "c": 0,
+              "b": 0
+            }
+          }
+        ]
+      },
+      "Considerations": [
+        {
+          "inputAxis": {
+            "IAType": "DistanceBetweenUnits"
+          },
+          "curve": {
+            "curveType": "QuadraticOrPolynomial",
+            "m": 1,
+            "k": 2,
+            "c": 0,
+            "b": 0
+          }
+        },
+        {
+          "inputAxis": {
+            "IAType": "AttackTarget"
+          },
+          "curve": {
+            "curveType": "QuadraticOrPolynomial",
+            "m": 1,
+            "k": 2,
+            "c": 0,
+            "b": 0
+          }
+        },
+        {
+          "inputAxis":{
+            "IAType": "GetHealthOfTarget"
+          },
+          "curve": {
+            "curveType": "Linear",
+            "m": 2,
+            "k": 0,
+            "c": 0,
+            "b": 0
+          }
+        }
+      ]
+    },
+    {
+      "ActionType": "UseDamagingAbility",
+      "WeightModifier": 4.0,
+      "MovementHelper": {
+        "movementConsiderations": [
+          {
+            "inputAxis": {
+              "IAType": "ApproachTarget"
+            },
+            "curve": {
+              "curveType": "Linear",
+              "m": 1,
+              "k": 0,
+              "c": 0,
+              "b": 0
+            }
+          }
+        ]
+      },
+      "Considerations": [
+        {
+          "inputAxis": {
+            "IAType": "DistanceBetweenUnits"
+          },
+          "curve": {
+            "curveType": "QuadraticOrPolynomial",
+            "m": 1,
+            "k": 2,
+            "c": 0,
+            "b": 0
+          }
+        },
+        {
+          "inputAxis": {
+            "IAType": "ConsiderUsingDamageAbility"
+          },
+          "curve": {
+            "curveType": "QuadraticOrPolynomial",
+            "m": 1,
+            "k": 2,
+            "c": 0,
+            "b": 0
+          }
+        }
+      ]
+    },
+    {
+      "ActionType": "UseHealingAbility",
+      "WeightModifier": 4.2,
+      "MovementHelper": {
+        "movementConsiderations": [
+          {
+            "inputAxis": {
+              "IAType": "ApproachTarget"
+            },
+            "curve": {
+              "curveType": "Linear",
+              "m": 1,
+              "k": 0,
+              "c": 0,
+              "b": 0
+            }
+          }
+        ]
+      },
+      "Considerations": [
+        {
+          "inputAxis": {
+            "IAType": "DistanceBetweenUnits"
+          },
+          "curve": {
+            "curveType": "QuadraticOrPolynomial",
+            "m": 1,
+            "k": 2,
+            "c": 0,
+            "b": 0
+          }
+        },
+        {
+          "inputAxis": {
+            "IAType": "ConsiderHealingOther"
+          },
+          "curve": {
+            "curveType": "Linear",
+            "m": 1,
+            "k": 0,
+            "c": 0,
+            "b": 0
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "LocalizationName": "First Level",
+  "ObjectiveType": "DefeatTarget",
+  "TargetValue": 1,
+  "PlayerSpawnables": [
+    {
+      "TileX": 0,
+      "TileY":  1
+    }
+  ],
+  "SpawnableDatas": 
+  [
+    {
+      "TileX": 1,
+      "TileY": 1,
+      "IsTarget": false,
+      "CharacterStats": {
+        "AttackRange": 1,
+        "Strength": 4,
+        "Defense": 2,
+        "Evasion": 10,
+        "MaxHP": 10,
+        "MaxMovementPoints": 4
+      }
+    },
+    {
+      "TileX": 4,
+      "TileY": 2,
+      "IsTarget": true,
+      "CharacterStats": {
+        "AttackRange": 1,
+        "Strength": 2,
+        "Defense": 0,
+        "Evasion": 12,
+        "MaxHP": 9,
+        "MaxMovementPoints": 4
+      }
+    }
+  ]
+}

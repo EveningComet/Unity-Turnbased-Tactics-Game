@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5feda8097f32bc64f9200bb7ed28f21f, type: 3}
+  m_Name: Generic Attack
+  m_EditorClassIdentifier: 
+  localizationName: Generic Attack
+  description: Generic attack.
+  abilityIcon: {fileID: 0}
+  aAOE: {fileID: 11400000, guid: 745fac8268960bb4aa8f5f223664ca3b, type: 2}
+  hitSuccessRate: {fileID: 11400000, guid: 51e94c6e27156d74a88385f7dfe77953, type: 2}
+  effects:
+  - {fileID: 11400000, guid: 2053b9ba4bc931943b03d5eb9ee1d68d, type: 2}
+  abilityTargetingLogic: {fileID: 11400000, guid: e116d1e4f71113e4cae48fa896d6da8c,
+    type: 2}
+  targetingType: 1
+  abilityType: 2

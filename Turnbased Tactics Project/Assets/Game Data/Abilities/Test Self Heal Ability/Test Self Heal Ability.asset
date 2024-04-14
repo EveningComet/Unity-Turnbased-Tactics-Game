@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5feda8097f32bc64f9200bb7ed28f21f, type: 3}
+  m_Name: Test Self Heal Ability
+  m_EditorClassIdentifier: 
+  localizationName: Test Self Heal Ability
+  description: A self-healing ability for testing.
+  abilityIcon: {fileID: 0}
+  aAOE: {fileID: 11400000, guid: 745fac8268960bb4aa8f5f223664ca3b, type: 2}
+  hitSuccessRate: {fileID: 11400000, guid: de73b6981dcb94043bdc2e9578cdeb58, type: 2}
+  effects:
+  - {fileID: 11400000, guid: 02aa53497f6beec4988d83912ff4140d, type: 2}
+  abilityTargetingLogic: {fileID: 11400000, guid: f159b78ff826c6d4daa311f764cf38d0,
+    type: 2}
+  targetingType: 0
+  abilityType: 3
